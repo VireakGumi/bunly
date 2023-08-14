@@ -1,0 +1,384 @@
+/* Home page style */
+
+.slide-show {
+    display: flex;
+    overflow: hidden;
+    margin-top: 6rem;
+
+}
+
+.slide-show img {
+    position: relative;
+    left: -20rem;
+}
+
+.home-content-text {
+    background-color: #88613B;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.16));
+}
+
+.home-content-text .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.home-content-text .text {
+    font-size: 15px;
+}
+
+.home-content-our-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+}
+
+.home-content-our-project .title {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-content-our-project .title p {
+    border-bottom: 2px solid #88613B;
+}
+
+.home-content-our-project .text {
+    font-size: 12px;
+    padding: 1.5rem 0;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 50%;
+
+}
+
+.images-wrapper img {
+    width: 100%;
+}
+
+.more-info {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.more-info button {
+    border: 1px solid #88613B;
+    padding: 0.4rem 1.1rem;
+    background-color: white;
+}
+
+.about-us {
+    position: relative;
+}
+
+.about-us .image {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.about-us .image img {
+    width: 100%;   
+    position: relative;
+
+}
+
+.about-us .image {
+    display: flex;
+    overflow: hidden;
+    width: 100%
+}
+
+.info-about {
+    position: absolute;
+    top: 19%;
+    left: 17.5%;
+    width: 82.5%;
+}
+
+.text-about-us {
+    background-color: #88613bc1;
+    color: white;
+    padding: 2rem;
+}
+
+.text-about-us .title {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.text-about-us .text {
+    font-size: 12px;
+}
+
+.home-content-news {
+    display: flex;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    margin: 0.2rem;
+}
+
+.card-image {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding: 0.3rem 0;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.news-card .info-text {
+    font-size: 14px;
+    padding: 0.3rem 0;
+    color: #707070;
+
+}
+
+.news-card .more-info {
+    margin-top: -1rem;
+}
+.news-card .more-info button  {
+    margin-left: 20%;
+
+}
+
+.contact-form {
+    background-color: #BA8A5A;
+    color: white;
+    padding: 2rem 1.5rem;
+}
+
+form {
+    border: 6px solid white;
+    filter: drop-shadow(20px 20px 5px rgba(2, 2, 2, 0.1));
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+input, button {
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+input::placeholder, input {
+    color: white;
+
+}
+
+.form-title {
+    display: flex;
+}
+
+.form-title h4 {
+    border-bottom: 2px solid white;
+    padding: 0 0.8rem 0.4rem 0;
+}
+
+.form-control button {
+    border-radius: 30px;
+    background: #ffffff;
+    border: none;
+}
+
+/************************
+        Media Query 
+*************************/
+/* Mobile screen (320=>780px) */
+@media only screen and (min-width: 350px) {
+    .info-about {
+        top: 24%;
+    }
+    .text-about-us {
+        padding: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .info-about {
+        top: 30%;
+    }
+    .text-about-us {
+        padding: 3rem;
+    }
+    form{
+        padding: 1rem;
+    }
+    .news-card .more-info button{
+        margin-left: 30%;
+    }
+
+
+}
+
+@media only screen and (min-width: 500px) {
+    .slide-show {
+        display: flex;
+        overflow: hidden;
+        margin-top: 6rem;
+    }
+    
+    .slide-show img {
+        position: relative;
+        left: -20rem;
+    }
+    .images-wrapper {
+        display: flex;
+        overflow: hidden;
+        width: 33%;
+    
+    }
+    .news-card{
+        width: 30%;
+    }
+    .text-about-us .title {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+    
+    .text-about-us .text {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .slide-show{
+        width: 100%;
+    }
+    .slide-show img{
+        width: 100%;
+        left: 0;
+    }
+    .info-about {
+        top: 30%;
+    }
+    .text-about-us {
+        padding: 3rem;
+    }
+    form{
+        padding: 1rem;
+    }
+}
+/* Tablet screen (780=>1024px) */
+
+@media only screen and (min-width: 750px) {
+    .home-content-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .home-content-row {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+}
+
+/* Tablet screen */
+
+@media only screen and (min-width: 750px) {
+    .images-wrapper {
+        width: 25%;
+    }
+    .news-card{
+        flex-direction: row;
+        width: 49%;
+    }
+    .card-image{
+        width: 27rem;
+        padding: 0 0.4rem;
+    }
+    .news-card .card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .news-card .more-info button{
+        margin-left: 50%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .home-content-text {
+        padding: 5% 10%;
+    }
+    .images-wrapper {
+        width: 20%;
+    }
+    .card-container {
+        width: 90%;
+    }
+    .contact-form {
+        padding: 8%;
+    }
+    form {
+        padding: 10%;
+    }
+}
+/* Laptop screen */
+@media only screen and (min-width: 1000px) {
+    .project-images{
+        width: 80%;
+    }
+    .home-content-text {
+        padding: 5% 10%;
+    }
+    /* .images-wrapper {
+        width: 18%;
+    } */
+    .card-container {
+        width: 90%;
+    }
+    .contact-form {
+        padding: 8%;
+    }
+    form {
+        padding: 10%;
+    }
+}
