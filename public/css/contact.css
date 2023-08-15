@@ -1,0 +1,123 @@
+.contact-content-container {
+    margin-top: 6rem;
+}
+.contact-form {
+    background-color: #ba8a5a;
+    color: white;
+    padding: 2rem 1.5rem;
+}
+
+form {
+    border: 6px solid white;
+    filter: drop-shadow(20px 20px 5px rgba(2, 2, 2, 0.1));
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+input::placeholder,
+input {
+    color: white;
+}
+
+.form-title {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.form-title h3 {
+    border-bottom: 3px solid white;
+    padding: 0 0.8rem 0.5rem 0;
+}
+.form-control .btn-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.form-control button {
+    border-radius: 30px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+/*  */
+
+/*  */
+/* Input Focus Animation */
+input:focus {
+    animation: inputFocusAnim 0.3s ease-in-out;
+}
+
+@keyframes inputFocusAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    form {
+        padding: 1rem;
+    }
+}
+@media only screen and (min-width: 750px) {
+    .contact-form {
+        padding: 7.45%;
+    }
+    form {
+        padding: 10%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .contact-form {
+        padding: 10%;
+    }
+
+    form {
+        padding: 5%;
+    }
+}
+
+/* Laptop screen */
+@media only screen and (min-width: 1000px) {
+    .contact-form {
+        padding: 5% 18%;
+    }
+
+    form {
+        padding: 8%;
+    }
+    .form-control .btn-wrapper {
+        display: flex;
+        width: 8rem;
+    }
+    .form-title h3 {
+        font-size: xx-large;
+    }
+}

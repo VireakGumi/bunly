@@ -5,45 +5,41 @@
 
 {{-- custom stylesheet --}}
 @section('stylesheet')
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}"> <!-- Style That Apply To All Pages Who Extended This Layout -->
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}"> <!-- Style That Apply To All Pages Who Extended This Layout -->
 
 @endsection
 
 {{-- BEGIN :: Contact Content --}}
 @section('body-content')
-    <div class="home-content-container">
+    <div class="contact-content-container">
         <!-- yoconstructionconstructionur body page code goes here -->
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
-        <h1>Contact us</h1>
+        <div class="contact-form">
+            <form action="">
+                <div class="form-title">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="form-control">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="Message">
+                </div>
+                <div class="form-control">
+                    <div class="btn-wrapper">
+                        <button type="button">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 @endsection
 {{-- END   :: Contact Content --}}
 
 {{-- custom script --}}
 @section('script')
-    <script src="{{ asset('js/website/pages/products/product-list.js') }}"></script>
+    <script src="{{ asset('js/contact.js') }}"></script>
 
 @endsection

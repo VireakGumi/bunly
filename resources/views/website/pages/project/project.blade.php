@@ -5,7 +5,7 @@
 
 {{-- custom stylesheet --}}
 @section('stylesheet')
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}"> <!-- Style That Apply To All Pages Who Extended This Layout -->
+    {{-- <link rel="stylesheet" href="{{ asset('css/home.css') }}"> <!-- Style That Apply To All Pages Who Extended This Layout --> --}}
 
 @endsection
 

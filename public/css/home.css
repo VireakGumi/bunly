@@ -12,7 +12,7 @@
 }
 
 .home-content-text {
-    background-color: #88613B;
+    background-color: #88613b;
     color: white;
     text-align: center;
     padding: 2.5rem 1.5rem;
@@ -45,7 +45,7 @@
 }
 
 .home-content-our-project .title p {
-    border-bottom: 2px solid #88613B;
+    border-bottom: 2px solid #88613b;
 }
 
 .home-content-our-project .text {
@@ -71,33 +71,39 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(72, 72, 72, 0.5); /* Replace with your desired color */
-    z-index: 111;
-    border: 2px solid #88613B;
-
-  }
+    background-color: rgba(
+        72,
+        72,
+        72,
+        0.5
+    ); /* Replace with your desired color */
+    z-index: 1;
+    border: 4px solid #ba8a5a;
+    box-sizing: border-box;
+}
+.images-wrapper i.fa-eye {
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    background-color: #ba8a5a;
+    color: white;
+    padding: 0.3rem;
+    font-size: 1rem;
+    visibility: hidden;
+    z-index: 2;
+}
+.images-wrapper:hover i.fa-eye {
+    visibility: visible;
+}
+.images-wrapper a {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
 .images-wrapper img {
     width: 100%;
 }
 
-
-.more-info {
-    display: flex;
-    justify-content: center;
-    padding: 1.5rem 0;
-}
-
-.more-info button {
-    border: 1px solid #88613B;
-    padding: 0.4rem 1.1rem;
-    background-color: white;
-    cursor: pointer;
-}
-
-.more-info button:hover {
-    background-color: #88613B;
-    color: white;
-}
 
 .about-us {
     position: relative;
@@ -107,19 +113,17 @@
     display: flex;
     overflow: hidden;
     width: 100%;
-
 }
 
 .about-us .image img {
     width: 100%;
     position: relative;
-
 }
 
 .about-us .image {
     display: flex;
     overflow: hidden;
-    width: 100%
+    width: 100%;
 }
 
 .info-about {
@@ -162,15 +166,16 @@
 .news-card {
     display: flex;
     flex-direction: column;
-    width: 46%;
+    width: 45%;
     margin: 0.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0.2rem;
 }
 
 .card-image {
     display: flex;
     overflow: hidden;
     width: 100%;
-    padding: 0.3rem 0;
 }
 
 .card-image img {
@@ -178,23 +183,49 @@
 }
 
 .news-card .info-text {
-    font-size: 14px;
+    font-size: 11px;
     padding: 0.3rem 0;
-    color: #707070;
-
+    color: #878787;
 }
 
 .news-card .more-info {
     margin-top: -1rem;
+    padding-bottom: 0.4rem;
 }
 
 .news-card .more-info button {
     margin-left: 20%;
-
+    font-size: 11px;
+    transition: margin-left 0.3s ease;
 }
 
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.news-card:hover .more-info button {
+    margin-left: 0;
+}
+
+.news-card:hover .card-info {
+    transform: translateY(5px);
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover .info-text {
+    color: #333333;
+}
+
+.news-card:hover .card-image {
+    padding-top: 0;
+}
+
+.news-card:hover .card-image img {
+    transform: scale(1.05);
+}
 .contact-form {
-    background-color: #BA8A5A;
+    background-color: #ba8a5a;
     color: white;
     padding: 2rem 1.5rem;
 }
@@ -213,7 +244,8 @@ form {
     padding: 1rem 0;
 }
 
-input, button {
+input,
+button {
     width: 100%;
     padding: 0.5rem 0;
 }
@@ -225,9 +257,9 @@ input {
     outline: none;
 }
 
-input::placeholder, input {
+input::placeholder,
+input {
     color: white;
-
 }
 
 .form-title {
@@ -238,7 +270,10 @@ input::placeholder, input {
     border-bottom: 2px solid white;
     padding: 0 0.8rem 0.4rem 0;
 }
-
+.form-control .btn-wrapper {
+    display: flex;
+    width: 100%;
+}
 .form-control button {
     border-radius: 30px;
     background: #ffffff;
@@ -275,8 +310,6 @@ input::placeholder, input {
     .news-card .more-info button {
         margin-left: 30%;
     }
-
-
 }
 
 @media only screen and (min-width: 500px) {
@@ -295,7 +328,6 @@ input::placeholder, input {
         display: flex;
         overflow: hidden;
         width: 33%;
-
     }
 
     .news-card {
@@ -331,12 +363,10 @@ input::placeholder, input {
         padding: 3rem;
     }
 
-    form {
-        padding: 1rem;
-    }
 }
 
 /* Tablet screen (780=>1024px) */
+
 
 @media only screen and (min-width: 750px) {
     .home-content-container {
@@ -351,22 +381,17 @@ input::placeholder, input {
 
         width: 100%;
     }
-}
-
-/* Tablet screen */
-
-@media only screen and (min-width: 750px) {
     .images-wrapper {
         width: 25%;
     }
 
     .news-card {
         flex-direction: row;
-        width: 49%;
+        width: 46%;
     }
 
     .card-image {
-        width: 27rem;
+        width: 25rem;
         padding: 0 0.4rem;
     }
 
@@ -390,16 +415,19 @@ input::placeholder, input {
         width: 100%;
         justify-content: center;
     }
-    .home-content-our-project{
+    .home-content-our-project {
         align-items: start;
+    }
+    .home-content-our-project .text {
+        width: 50%;
     }
     .home-content-our-project .more-info {
         width: 100%;
     }
-    .home-content-our-project .more-info button{
+    .home-content-our-project .more-info button {
         width: 15%;
     }
-    .project-images{
+    .project-images {
         width: 100%;
     }
     .images-wrapper {
@@ -417,48 +445,66 @@ input::placeholder, input {
     form {
         padding: 10%;
     }
+    .images-wrapper i.fa-eye {
+        padding: 0.4rem;
+        font-size: 1.3rem;
+    }
 }
 
 /* Laptop screen */
 @media only screen and (min-width: 1000px) {
-
+    .home-content-our-project {
+        width: 85%;
+    }
     .home-content-text {
-        padding: 5% 10%;
+        padding: 8%;
     }
 
     .card-container {
-        width: 90%;
+        width: 93%;
     }
 
     .contact-form {
-        padding: 8% 10%;
+        padding: 8% 7%;
     }
 
+
+
     form {
-        padding: 10%;
+        padding: 8%;
+    }
+    .form-control .btn-wrapper {
+        display: flex;
+        width: 8rem;
+    }
+    .form-title h4 {
+        font-size: xx-large;
+        margin-bottom: 4rem;
+    }
+    .images-wrapper:hover::before {
+        border: 6px solid #ba8a5a;
     }
 }
 
 @media only screen and (min-width: 1150px) {
-
     .card-container {
         width: 90%;
     }
-
+    .card-info .info-title {
+        font-size: 19px;
+    }
+    .card-info .info-text {
+        font-size: 13px;
+    }
     .card-image {
         width: 20rem;
-    }
-
-    .news-card .more-info button {
-        margin-left: 70%;
     }
 
 }
 
 @media only screen and (min-width: 1300px) {
-
     .card-container {
-        width: 90%;
+        width: 95%;
     }
     .card-info .info-title {
         font-size: 21px;
@@ -467,7 +513,13 @@ input::placeholder, input {
         font-size: 15px;
     }
     .card-image {
-        width: 15rem;
+        width: 25rem;
     }
-    
+    .news-card .more-info button { 
+        font-size: 13px;
+    }
+    .images-wrapper i.fa-eye {
+        padding: 0.6rem;
+        font-size: 1.7rem;
+    }
 }

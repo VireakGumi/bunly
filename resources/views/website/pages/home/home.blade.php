@@ -51,6 +51,7 @@
                                 <a href="##">
                                     <img src="{{ asset('images/106176592_3008767946.png') }}" alt="">
                                 </a>
+                                <i class="fa fa-eye"></i>
                             </div>
                         @endfor
                     </div>
@@ -126,7 +127,9 @@
                         <input type="text" placeholder="Message">
                     </div>
                     <div class="form-control">
-                        <button>Send</button>
+                        <div class="btn-wrapper">
+                            <button type="submit">Send</button>
+                        </div>
                     </div>
                 </form>
             </div>
